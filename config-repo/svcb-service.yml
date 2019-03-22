@@ -14,7 +14,7 @@ eureka:
 management:
   security:
     enabled: false
-  context-path: /
+  context-path: /wx
   
 security: 
   user:
