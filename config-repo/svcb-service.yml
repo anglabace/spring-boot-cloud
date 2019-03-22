@@ -14,10 +14,9 @@ eureka:
 management:
   security:
     enabled: false
-    
+  context-path: /
+  
 security: 
-  basic:
-    enabled: false
   user:
     name: user
     password: password
