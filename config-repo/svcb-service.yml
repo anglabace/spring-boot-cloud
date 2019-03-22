@@ -3,6 +3,8 @@ server:
   
 msg: anglabace
 
+debug: true
+
 eureka:
   instance:
     metadata-map:
