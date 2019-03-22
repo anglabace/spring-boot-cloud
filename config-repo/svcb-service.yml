@@ -16,6 +16,8 @@ management:
     enabled: false
     
 security: 
+  basic:
+    enabled: false
   user:
     name: user
     password: password
