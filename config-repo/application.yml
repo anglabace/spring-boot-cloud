@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: registry
+    hostname: registry.spring.cloud
     prefer-ip-address: true
   client:
     service-url:
@@ -20,7 +20,7 @@ ribbon:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.spring.cloud
   sleuth:
     sampler:
       percentage: 1
@@ -30,7 +30,7 @@ spring:
       skip-pattern: "^org.*HystrixStreamTask$"
 
 authserver:
-    hostname: auth-service
+    hostname: auth-service.spring.cloud
     port: 5000
     contextPath: /uaa
 
