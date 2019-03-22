@@ -22,6 +22,8 @@ security:
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
       scope: server
+      basic:
+        enabled: false
 
 logging:
   config: classpath:logback.xml
