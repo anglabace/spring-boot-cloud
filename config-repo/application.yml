@@ -1,6 +1,6 @@
 eureka:
   instance:
-    hostname: registry
+    hostname: registry.spring.cloud
     prefer-ip-address: true
   client:
     service-url:
@@ -20,7 +20,10 @@ ribbon:
 
 spring:
   rabbitmq:
-    host: rabbitmq
+    host: rabbitmq.spring.cloud
+    username: anglabace
+    password: zxc123150
+    virtualHost: /
   sleuth:
     sampler:
       percentage: 1
