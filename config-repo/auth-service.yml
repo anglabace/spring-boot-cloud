@@ -1,6 +1,6 @@
 server:
   context-path: /uaa
-  port: 8060
+  port: 5000
 
 management:
   security:
