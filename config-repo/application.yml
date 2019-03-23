@@ -4,7 +4,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry:8761/eureka/
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@registry.spring.cloud:8761/eureka/
 
 hystrix:
   command:
@@ -21,6 +21,9 @@ ribbon:
 spring:
   rabbitmq:
     host: rabbitmq.spring.cloud
+    username: anglabace
+    password: zxc123150
+    virtualHost: /
   sleuth:
     sampler:
       percentage: 1
