@@ -12,6 +12,8 @@ eureka:
       user.password: ${security.user.password}
   
 security: 
+  basic:
+    enabled: false
   user:
     name: user
     password: password
