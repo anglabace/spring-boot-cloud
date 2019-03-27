@@ -77,7 +77,7 @@ mysql:
         configLocation: classpath:/mybatis-config.xml
         write:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
-           username: anglabac
+           username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
@@ -96,7 +96,7 @@ mysql:
            filters: stat
         read01:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
-           username: anglabac
+           username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
@@ -115,7 +115,7 @@ mysql:
            filters: stat
         read02:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
-           username: anglabac
+           username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
