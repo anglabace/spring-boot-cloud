@@ -1,3 +1,10 @@
+application:
+  #版本
+  version: 1.0.0
+  #文件上传路径
+  profile: D:/profile/
+  profileurl: http://localhost/app/files/
+  profilemap: /files/**
 server:
   port: 8070
   
