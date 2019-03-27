@@ -76,9 +76,9 @@ mysql:
         mapperLocations: classpath:/com/ewx/cp/dao/*.xml
         configLocation: classpath:/mybatis-config.xml
         write:
-           url: jdbc:mysql://10.18.178.217:50501/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
-           username: anglabace
-           password: zxc123150@
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
+           username: anglabac
+           password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
            maxActive: 100
@@ -95,9 +95,9 @@ mysql:
            removeAbandoned: true
            filters: stat
         read01:
-           url: jdbc:mysql://10.18.178.217:50501/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
-           username: anglabace
-           password: zxc123150@
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
+           username: anglabac
+           password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
            maxActive: 100
@@ -114,9 +114,9 @@ mysql:
            removeAbandoned: true
            filters: stat
         read02:
-           url: jdbc:mysql://10.18.178.217:50501/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
-           username: anglabace
-           password: zxc123150@
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?autoReconnect=true&amp;autoReconnectForPools=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false
+           username: anglabac
+           password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
            minIdle: 5
            maxActive: 100
