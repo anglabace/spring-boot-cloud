@@ -65,9 +65,11 @@ wechat:
   
 mybatis:
      mapperLocations: classpath:/com/ewx/cp/dao/*.xml
-     typeAliasesPackage: com.ewx.cp.dao    
+     typeAliasesPackage: com.ewx.cp.pojo    
      mapperScanPackage: com.ewx.cp.dao
      configLocation: classpath:/mybatis-config.xml
+#     type-aliases-package: com.ewx.cp.pojo
+
 
 mysql:
     datasource:
