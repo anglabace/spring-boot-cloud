@@ -96,7 +96,11 @@ mysql:
            poolPreparedStatements: true
            maxPoolPreparedStatementPerConnectionSize: 50
            removeAbandoned: true
-           filters: stat
+           filters: stat # ,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码
         read01:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
@@ -115,7 +119,11 @@ mysql:
            poolPreparedStatements: true
            maxPoolPreparedStatementPerConnectionSize: 50
            removeAbandoned: true
-           filters: stat
+           filters: stat # ,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码
         read02:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_ewx?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
@@ -134,4 +142,8 @@ mysql:
            poolPreparedStatements: true
            maxPoolPreparedStatementPerConnectionSize: 50
            removeAbandoned: true
-           filters: stat       
+           filters: stat # ,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码       
