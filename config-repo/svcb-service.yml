@@ -43,6 +43,7 @@ logging:
     org.springframework.web: INFO
     com.ewx.cp: DEBUG
     me.chanjar.weixin: DEBUG
+    com.ewx.cp.dao: DEBUG 
     
 # 上传文件总的最大值
 spring:
