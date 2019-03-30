@@ -5,6 +5,11 @@ application:
   profile: D:/profile/
   profileurl: http://localhost/app/files/
   profilemap: /files/**
+
+weixin:
+  sendmsg:
+    retrycount: 5
+  
 server:
   port: 8070
   
