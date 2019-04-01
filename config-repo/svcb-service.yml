@@ -30,7 +30,7 @@ redis:
     numTestsPerEvictionRun: 1024
     timeBetweenEvictionRunsMillis: 30000 
     testOnBorrow: true
-    testWhileIdle：true
+    testWhileIdle: true
     
 debug: true
 
