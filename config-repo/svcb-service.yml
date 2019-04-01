@@ -16,14 +16,8 @@ server:
 msg: anglabace
 
 redis:
-  database: 15
-  password: 
-  timeout: 3600
-  sentinel: 
-    master: jsnxmaster
-    nodes: redis.spring.cloud:6379
   pool:
-    maxIdele: 300
+    maxIdle: 300
     maxTotal: 1000
     maxWaitMillis: 1000 
     minEvictableIdleTimeMillis: 300000
@@ -31,6 +25,13 @@ redis:
     timeBetweenEvictionRunsMillis: 30000 
     testOnBorrow: true
     testWhileIdle: true
+  database: 15
+  password: 
+  timeout: 3600
+  sentinel: 
+    master: jsnxmaster
+    nodes: redis.spring.cloud:6379
+
     
 debug: true
 
