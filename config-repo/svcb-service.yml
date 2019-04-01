@@ -25,7 +25,7 @@ redis:
     timeBetweenEvictionRunsMillis: 30000 
     testOnBorrow: true
     testWhileIdle: true
-  database: 15
+  database: 11
   password: 
   timeout: 3600
   sentinel: 
