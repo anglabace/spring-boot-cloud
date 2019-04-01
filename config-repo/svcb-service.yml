@@ -30,7 +30,7 @@ redis:
   timeout: 3600
   sentinel: 
     master: jsnxmaster
-    nodes: redis.spring.cloud:6379
+    nodes: redis.spring.cloud:26379,redis.spring.cloud:26380,redis.spring.cloud:26381
 
     
 debug: true
