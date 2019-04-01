@@ -23,7 +23,7 @@ redis:
     master: jsnxmaster
     nodes: redis.spring.cloud:6379
   pool:
-    madIdele: 300
+    maxIdele: 300
     maxTotal: 1000
     maxWaitMillis: 1000 
     minEvictableIdleTimeMillis: 300000
