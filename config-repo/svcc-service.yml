@@ -53,7 +53,7 @@ security:
     password: password
   oauth2:
     client:
-      clientId: svcb-service
+      clientId: svcc-service
       clientSecret: ${security.user.password}
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
@@ -64,9 +64,9 @@ logging:
   path: d:/logs
   level:
     org.springframework.web: INFO
-    com.ewx.cp: DEBUG
+    com.ewx.workflow: DEBUG
     me.chanjar.weixin: DEBUG
-    com.ewx.cp.dao: DEBUG 
+    com.ewx.workflow.dao: DEBUG 
     
 # 上传文件总的最大值
 spring:
