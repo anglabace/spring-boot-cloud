@@ -15,6 +15,11 @@ server:
   
 msg: anglabace
 
+word:
+  to:
+    html:
+      path: /tmp/doc/
+
 redis:
   pool:
     maxIdle: 300
