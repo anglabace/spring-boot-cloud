@@ -1,0 +1,163 @@
+application:
+  #版本
+  version: 1.0.0
+  #文件上传路径
+  profile: D:/profile/
+  profileurl: http://localhost/app/files/
+  profilemap: /files/**
+
+weixin:
+  sendmsg:
+    retrycount: 5
+  
+server:
+  port: 8270
+  
+msg: anglabace
+
+redis:
+  pool:
+    maxIdle: 300
+    maxTotal: 1000
+    maxWaitMillis: 1000 
+    minEvictableIdleTimeMillis: 300000
+    numTestsPerEvictionRun: 1024
+    timeBetweenEvictionRunsMillis: 30000 
+    testOnBorrow: true
+    testWhileIdle: true
+  database: 11
+  password: 
+  timeout: 3600
+  sentinel: 
+    master: jsnxmaster
+    nodes: redis.spring.cloud:26379,redis.spring.cloud:26380,redis.spring.cloud:26381
+
+    
+debug: true
+
+eureka:
+  instance:
+    metadata-map:
+      user.name: ${security.user.name}
+      user.password: ${security.user.password}
+
+management:
+  security:
+    enabled: false
+  
+security: 
+  basic:
+    enabled: false
+  user:
+    name: user
+    password: password
+  oauth2:
+    client:
+      clientId: svcc-service
+      clientSecret: ${security.user.password}
+      accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
+      grant-type: client_credentials
+      scope: server
+
+logging:
+  config: classpath:logback.xml
+  path: d:/logs
+  level:
+    org.springframework.web: INFO
+    com.ewx.workflow: DEBUG
+    me.chanjar.weixin: DEBUG
+    com.ewx.workflow.dao: DEBUG 
+    
+# 上传文件总的最大值
+spring:
+   servlet:
+      multipart:
+         max-request-size:10MB
+         max-file-size:10MB
+# 单个文件的最大值
+
+
+  
+mybatis:
+     mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
+     typeAliasesPackage: com.ewx.workflow.pojo    
+     mapperScanPackage: com.ewx.workflow.dao
+     configLocation: classpath:/mybatis-config.xml
+#     type-aliases-package: com.ewx.cp.pojo
+
+
+mysql:
+    datasource:
+        readSize: 2  #读库个数
+        type: com.alibaba.druid.pool.DruidDataSource
+        mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
+        configLocation: classpath:/mybatis-config.xml
+        write:
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           username: anglabace
+           password: Wewechat
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码
+        read01:
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           username: anglabace
+           password: Wewechat
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码
+        read02:
+           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           username: anglabace
+           password: Wewechat
+           driver-class-name: com.mysql.jdbc.Driver
+           minIdle: 5
+           maxActive: 100
+           initialSize: 10
+           maxWait: 60000
+           timeBetweenEvictionRunsMillis: 60000
+           minEvictableIdleTimeMillis: 300000
+           validationQuery: select 'x'
+           testWhileIdle: true
+           testOnBorrow: false
+           testOnReturn: false
+           poolPreparedStatements: true
+           maxPoolPreparedStatementPerConnectionSize: 50
+           removeAbandoned: true
+           filters: stat,wall,log4j # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+           connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000 # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+           useGlobalDataSourceStat: true # 合并多个DruidDataSource的监控数据
+           druidLoginName: wjf # 登录druid的账号
+           druidPassword: wjf # 登录druid的密码       
