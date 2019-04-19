@@ -16,11 +16,6 @@ server:
 web:
   upload-path: E:/
   
-spring:
-  mvc:
-    static-path-pattern: /**
-  resources:
-    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
 
 msg: anglabace
 
@@ -84,6 +79,10 @@ logging:
     
 # 上传文件总的最大值
 spring:
+   mvc:
+      static-path-pattern: /**  
+   resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
    http:
       multipart:
          max-request-size: 10MB
@@ -91,6 +90,8 @@ spring:
 # 单个文件的最大值
 
 
+
+    
   
 mybatis:
      mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
