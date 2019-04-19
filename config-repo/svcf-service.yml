@@ -64,9 +64,9 @@ logging:
   path: d:/logs
   level:
     org.springframework.web: INFO
-    com.ewx.workflow: DEBUG
+    com.ewx.file: DEBUG
     me.chanjar.weixin: DEBUG
-    com.ewx.workflow.dao: DEBUG 
+    com.ewx.file.dao: DEBUG 
     
 # 上传文件总的最大值
 spring:
@@ -90,7 +90,7 @@ mysql:
     datasource:
         readSize: 2  #读库个数
         type: com.alibaba.druid.pool.DruidDataSource
-        mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
+        mapperLocations: classpath:/com/ewx/file/dao/*.xml
         configLocation: classpath:/mybatis-config.xml
         write:
            url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
