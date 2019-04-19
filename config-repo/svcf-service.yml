@@ -79,9 +79,9 @@ spring:
 
   
 mybatis:
-     mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
-     typeAliasesPackage: com.ewx.workflow.pojo    
-     mapperScanPackage: com.ewx.workflow.dao
+     mapperLocations: classpath:/com/ewx/file/dao/*.xml
+     typeAliasesPackage: com.ewx.file.pojo    
+     mapperScanPackage: com.ewx.file.dao
      configLocation: classpath:/mybatis-config.xml
 #     type-aliases-package: com.ewx.cp.pojo
 
