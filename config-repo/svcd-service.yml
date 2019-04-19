@@ -11,8 +11,17 @@ weixin:
     retrycount: 5
   
 server:
-  port: 8180
+  port: 80
+
+web:
+  upload-path: E:/
   
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
+
 msg: anglabace
 
 word:
