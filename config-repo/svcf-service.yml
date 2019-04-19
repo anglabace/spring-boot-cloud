@@ -79,10 +79,10 @@ logging:
     
 # 上传文件总的最大值
 spring:
-   servlet:
+   http:
       multipart:
-         max-request-size:200MB
-         max-file-size:200MB
+         max-request-size: 200MB
+         max-file-size: 200MB
 # 单个文件的最大值
 
 
