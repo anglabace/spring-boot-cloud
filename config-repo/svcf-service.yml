@@ -21,6 +21,8 @@ weixin:
   
 server:
   port: 8270
+  tomcat:
+    basedir: D:/profile/temp/
   
 msg: anglabace
 
