@@ -62,7 +62,7 @@ security:
     password: password
   oauth2:
     client:
-      clientId: svcc-service
+      clientId: svcd-service
       clientSecret: ${security.user.password}
       accessTokenUri: http://${authserver.hostname}:${authserver.port}${authserver.contextPath}/oauth/token
       grant-type: client_credentials
