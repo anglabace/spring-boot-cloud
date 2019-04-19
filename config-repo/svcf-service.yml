@@ -6,6 +6,15 @@ application:
   profileurl: http://localhost/app/files/
   profilemap: /files/**
 
+awss3:
+  #版本
+  version: 1.0.0
+  bucketName: awstest
+  accessKey: C488JQZT9GG9HGG48Y3C
+  secretKey: dFTi9b+DXlPP0GoKHDDz4e40quUaeMjqgo8DK8+Y
+  endpoint: http://10.18.176.248:9000
+  publicurl: http://10.18.176.248:9000
+
 weixin:
   sendmsg:
     retrycount: 5
