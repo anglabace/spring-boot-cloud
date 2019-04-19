@@ -72,8 +72,8 @@ logging:
 spring:
    http:
       multipart:
-         max-request-size:10MB
-         max-file-size:10MB
+         max-request-size: 10MB
+         max-file-size: 10MB
 # 单个文件的最大值
 
 
