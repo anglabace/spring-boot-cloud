@@ -24,23 +24,6 @@ word:
     html:
       path: /tmp/doc/
 
-redis:
-  pool:
-    maxIdle: 300
-    maxTotal: 1000
-    maxWaitMillis: 1000 
-    minEvictableIdleTimeMillis: 300000
-    numTestsPerEvictionRun: 1024
-    timeBetweenEvictionRunsMillis: 30000 
-    testOnBorrow: true
-    testWhileIdle: true
-  database: 11
-  password: 
-  timeout: 3600
-  sentinel: 
-    master: jsnxmaster
-    nodes: redis.spring.cloud:26379,redis.spring.cloud:26380,redis.spring.cloud:26381
-
     
 debug: true
 
