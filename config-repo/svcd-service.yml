@@ -56,9 +56,8 @@ logging:
   path: d:/logs
   level:
     org.springframework.web: INFO
-    com.ewx.workflow: DEBUG
-    me.chanjar.weixin: DEBUG
-    com.ewx.workflow.dao: DEBUG 
+    com.jsnx.ewx.ueditor: DEBUG
+    me.chanjar.weixin: DEBUG 
     
 # 上传文件总的最大值
 spring:
