@@ -12,6 +12,8 @@ weixin:
   
 server:
   port: 80
+  tomcat:
+    basedir: D:/profile/temp/  
 
 web:
   upload-path: E:/
