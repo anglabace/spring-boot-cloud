@@ -71,5 +71,5 @@ spring:
       multipart:
          max-request-size: 10MB
          max-file-size: 10MB
-         enabled: false
+         enabled: true
 # 单个文件的最大值
