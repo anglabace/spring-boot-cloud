@@ -21,7 +21,7 @@ weixin:
     retrycount: 5
   
 server:
-  port: 8270
+  port: 8570
   tomcat:
     basedir: D:/profile/temp/
   
