@@ -42,3 +42,6 @@ zuul:
     svcf-service:
       path: /svcf/**
       sensitiveHeaders:        
+    zuul-reverse-proxy:
+      path: /zuulproxy/**
+      sensitiveHeaders:        
