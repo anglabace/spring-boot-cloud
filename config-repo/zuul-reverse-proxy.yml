@@ -21,4 +21,4 @@ zuul:
   routes:
     fanruan-api:
       path: /finereport/**
-      url: http://localhost:7000/
+      url: http://66.16.59.198:7000/
