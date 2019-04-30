@@ -27,7 +27,12 @@ ribbon:
     # 饥饿加载的服务
     clients: svcb-service,zuul-reverse-proxy,ewx-personal-management-service  
     
- 
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    username: anglabace
+    password: zxc123150
+    virtualHost: /    
 
 zuul:
   routes:
