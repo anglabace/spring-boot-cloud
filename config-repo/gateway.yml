@@ -45,3 +45,6 @@ zuul:
     zuul-reverse-proxy:
       path: /zuulproxy/**
       sensitiveHeaders:        
+    ewx-personal-management-service:
+      path: /personal/**
+      sensitiveHeaders:
