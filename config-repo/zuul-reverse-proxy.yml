@@ -5,6 +5,10 @@ management:
   security:
     enabled: false
 
+feign:
+  hystrix:
+    enabled: true   
+
 hystrix:
   command:
     default:
@@ -22,6 +26,8 @@ ribbon:
     enabled: true
     # 饥饿加载的服务
     clients: svcb-service,zuul-reverse-proxy,ewx-personal-management-service  
+    
+ 
 
 zuul:
   routes:
