@@ -16,6 +16,12 @@ hystrix:
 ribbon:
   ReadTimeout: 10000
   ConnectTimeout: 10000
+  # 饥饿加载
+  eager-load:
+    # 是否开启饥饿加载
+    enabled: true
+    # 饥饿加载的服务
+    clients: svcb-service,zuul-reverse-proxy,ewx-personal-management-service  
 
 zuul:
   routes:
@@ -47,3 +53,6 @@ zuul:
     zuul-reverse-proxy:
       path: /zuulproxy/**
       sensitiveHeaders:
+    ewx-personal-management-service:
+      path: /personal/**
+      sensitiveHeaders:      
