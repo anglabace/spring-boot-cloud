@@ -22,3 +22,28 @@ zuul:
     fanruan-api:
       path: /finereport/**
       url: http://10.18.176.248:8070/
+    auth-service:
+      path: /uaa/**
+      stripPrefix: false
+      sensitiveHeaders:
+    svca-service:
+      path: /svca/**
+      sensitiveHeaders:
+    svcb-service:
+      path: /svcb/**
+      sensitiveHeaders:
+    svcc-service:
+      path: /svcc/**
+      sensitiveHeaders:      
+    svcd-service:
+      path: /svcd/**
+      sensitiveHeaders:  
+    svce-service:
+      path: /svce/**
+      sensitiveHeaders:   
+    svcf-service:
+      path: /svcf/**
+      sensitiveHeaders:        
+    zuul-reverse-proxy:
+      path: /zuulproxy/**
+      sensitiveHeaders:
