@@ -93,7 +93,7 @@ mysql:
         mapperLocations: classpath:/com/ewx/workflow/dao/*.xml
         configLocation: classpath:/mybatis-config.xml
         write:
-           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.249:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
@@ -116,7 +116,7 @@ mysql:
            druidLoginName: wjf # 登录druid的账号
            druidPassword: wjf # 登录druid的密码
         read01:
-           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.249:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
@@ -139,7 +139,7 @@ mysql:
            druidLoginName: wjf # 登录druid的账号
            druidPassword: wjf # 登录druid的密码
         read02:
-           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.249:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
