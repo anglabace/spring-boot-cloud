@@ -38,4 +38,4 @@ zuul:
   routes:
     fanruan-api:
       path: /finereport/**
-      url: http://192.168.1.294:8010
+      url: http://192.168.1.249:8010
