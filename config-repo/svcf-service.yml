@@ -10,10 +10,10 @@ awss3:
   #版本
   version: 1.0.0
   bucketName: awstest
-  accessKey: C488JQZT9GG9HGG48Y3C
-  secretKey: dFTi9b+DXlPP0GoKHDDz4e40quUaeMjqgo8DK8+Y
-  endpoint: http://10.18.176.248:9000
-  publicurl: http://10.18.176.248:9000
+  accessKey: 0P8E17P6YSULLOD13F2A
+  secretKey: FrlK+Z+Joi1fV+aAQBWZf9SwGtVoTwRtLDxk6sLY
+  endpoint: http://192.168.1.294:9000
+  publicurl: http://192.168.1.294:9000
   newurlstatus: 0
   
 weixin:
@@ -87,7 +87,7 @@ mysql:
         mapperLocations: classpath:/com/ewx/file/dao/*.xml
         configLocation: classpath:/mybatis-config.xml
         write:
-           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
@@ -110,7 +110,7 @@ mysql:
            druidLoginName: wjf # 登录druid的账号
            druidPassword: wjf # 登录druid的密码
         read01:
-           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
@@ -133,7 +133,7 @@ mysql:
            druidLoginName: wjf # 登录druid的账号
            druidPassword: wjf # 登录druid的密码
         read02:
-           url: jdbc:mysql://10.18.178.217:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
+           url: jdbc:mysql://192.168.1.294:4706/jsnx_workflow?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false
            username: anglabace
            password: Wewechat
            driver-class-name: com.mysql.jdbc.Driver
